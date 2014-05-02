@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+ <script>
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
+<!--<p class="meta">{{ page.date | date_to_string }}</p>-->
+     <div class="kolumni-2-tablet">
+          <div class="kansio-puu">
+            <ul class="kansio-puu-ul">
+                    <div class="kansio-puu-paa-linkit">
+    <a class="kansio-puu-linkki" href="{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
+    <a class="kansio-puu-linkki" href="{{ site.baseurl }}/about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
+    <a class="kansio-puu-linkki" href="{{ site.baseurl }}/favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
+    </div>
+            	   	<a href="{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Home</div></li></a>
+            	<a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Back</div></li></a>
+
+          </ul>
+        </div>
+      </div>   
+      <div class="kolumni-10-tablet">
+     
+         <!-- <div class="polku-rivi">
+        
+              <div class="polku-osa">{{ page.category }}</div>
+
+              {% if page.subcategory != null %}
+              <div class="polku-osa">{{page.subcategory}}</div>
+              {% endif %}
+          </div>-->
+          <div class="teksti-kontti">
+          <div class="teksti-otsikko"> :: {{ page.title }} ::  </div>
+          <div class="kolumni-12-tablet teksti-sisalto">
+{{ content }}
+</div>
+</div>
+</div>
+

@@ -1,0 +1,54 @@
+.kansio-puu {
+	border-right:1px solid lightgrey;
+	min-height: 200px;
+
+
+
+}
+
+.kansio-puu ul  {
+	list-style-type: none;
+
+}
+
+.kansio-puu a {
+	color:grey;
+
+}
+
+
+
+
+.navi {
+	border-bottom:1px solid lightgrey;
+	min-height:25px;
+
+}
+
+.navi-merkki:before {
+	content:"->";
+	padding-right:3px;
+	color:lime;
+	cursor:pointer;
+}
+
+
+.sisalto {
+	border-bottom:1px solid lightgrey;
+	min-height:200px;
+}
+
+.sisalto ul {
+		list-style-type: none;
+		padding:15px 5px 5px 5px;
+
+}
+
+.sisalto-merkki:before {
+	content:"[]";
+	padding-right:3px;
+	color:lime;
+	cursor:pointer;
+}
+
+

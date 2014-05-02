@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+ <script>
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
+<!--<p class="meta">{{ page.date | date_to_string }}</p>-->
+     <div class="kolumni-2-tablet">
+          <div class="kansio-puu">
+            <ul class="kansio-puu-ul">
+              <li>SUBDIR!</li>
+            	   	<a href="{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Etusivu</div></li></a>
+            	<a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Takaisin</div></li></a>
+
+          </ul>
+        </div>
+      </div>   
+      <div class="kolumni-10-tablet">
+     
+          <div class="polku-rivi">
+        
+              <div class="polku1">{{ page.category }}</div><div class="polku2">{{ page.title }}</div>
+            
+          </div>
+          <div class="kolumni-12-tablet">
+{{ content }}
+</div>
+
+</div>
+

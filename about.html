@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<script>
+function goBack()
+{
+  window.history.back()
+}
+</script>
+<div class="kolumni-2-tablet">
+  <div class="kansio-puu">
+    <ul class="kansio-puu-ul">
+      <div class="kansio-puu-paa-linkit">
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
+        <a class="kansio-puu-linkki" href="about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
+        <a class="kansio-puu-linkki" href="favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
+      </div>
+      <a href="{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki-main">Home</div></li></a>
+      <a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Back</div></li></a>
+
+    </ul>
+  </div>
+</div>   
+<div class="kolumni-10-tablet">
+
+
+  <div class="kolumni-12-tablet">
+    <h1>Jekyll Archive Manager</h1>
+    <p>Jekyll Archive Manager (JAM) is a file manager outlook for the blog-aware, static site generator Jekyll.</p>
+  </div>
+
+
+</div>

@@ -1,0 +1,103 @@
+---
+layout: default
+---
+<div class="kolumni-2-tablet">
+  <div class="kansio-puu">
+    <ul class="kansio-puu-ul">
+      <div class="kansio-puu-paa-linkit">
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main home"> {{ site.data.owner.name }}</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
+      </div></ul>
+    </div>
+  </div>
+
+  <div class="kolumni-10-tablet paa-kontti">
+    <div class="polku-rivi">
+      <div class="polku1"><div class="polku-osa"></div></div>
+    </div>
+
+    <div class="kansio-kontti index-kontti">
+
+
+
+      <div class="kolumni-12-tablet" style="float:left;">
+
+        <div class="index-tiedot">
+         <ul>
+         <li> Owner: {{ site.data.owner.name }} </li>
+         <li> Total post count: {{ site.posts | size }}</li> 
+         <li> Total category count: {{ site.categories | size }}</li>
+          <li>Last Update: {{ site.time }}</li>
+       </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    {% for category in site.categories %}
+    {% unless category contains "main" or category contains "favourite" %}
+    <div class="kansio-kontti">
+      <div class="kansio-otsikko">
+       <h6>{{ category | first | capitalize }}</h6>
+     </div>
+     <div class="kansio-sisalto">
+      <table>
+        <tr class="ensi-rivi">
+          <td>Title</td><td>  Words </td><td> Date </td>
+        </tr>
+        {% for posts in category %}
+        {% for post in posts %}
+        {% if post.title != null and post.subcategory  == null %}
+        <tr>
+          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
+            <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
+            <td> {{ post.content | number_of_words }} </td>
+            <td> {{ post.date | date: "%Y-%m-%d" }} </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+      </div>
+    </div>
+
+    {% for posts in category %}
+
+    {% for post in posts %}
+    {% if post.subcategory != null %}
+
+    <div class="kansio-kontti alikansio">
+      <div class=" alikansio-otsikko">
+       <h6>{{ post.subcategory }}</h6>
+     </div>
+     <div class="alikansio-kategoria">
+      {{ post.category }}
+    </div>
+    <div class="kansio-sisalto">
+      <table>
+        <tr class="ensi-rivi">
+          <td>Title</td><td>  Words </td><td> Date </td>
+        </tr>
+
+        {% if post.title != null and post.subcategory  != null %}
+        <tr>
+          <td class="tiedosto-otsikko-td"><a href="{{ site.baseurl }}{{ post.url }}"> <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
+          <td> {{ post.content | number_of_words }} </td>
+          <td> {{ post.date | date: "%d-%m-%Y" }} </td>
+        </tr>
+        {% endif %}
+      </table>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endunless %}
+  {% endfor %}
+</div>
+

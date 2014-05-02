@@ -1,0 +1,338 @@
+@import "Lindeman.css";
+@import "normalize.css";
+@import "ruutu.css";
+@import "tyyli.css";
+/*  cool blue: */
+// $main-color: rgba(60,190,250,0.7);
+/* almost andoird: */
+// $main-color: rgba(150,220,0,0.7);
+/* lime */ 
+//$main-color: rgba(100,220,0,0.7);
+
+$main-color: rgba(60,190,250,0.7);
+$text-color: grey;
+$puu-tausta: rgba(0,0,0,0.2);
+$kansio-sisalto-tausta: white;
+$polku-rivi: rgba(230,230,230,1);
+
+
+header {
+	color:$text-color;
+	border-bottom:1px solid $puu-tausta - 200;
+/*
+		background: -webkit-linear-gradient($puu-tausta,$puu-tausta - 30); 
+		background: -o-linear-gradient($puu-tausta,$puu-tausta  - 30); 
+		background: -moz-linear-gradient($puu-tausta,$puu-tausta - 30); 
+		background: linear-gradient($puu-tausta,$puu-tausta - 90); 
+		*/
+
+	}
+
+	a {
+		color: $text-color;
+	}
+
+	footer {
+
+	}
+
+	.kansio-puu {
+	width:100%;
+	margin:0 auto;
+	ul {
+		list-style-type: none;
+	}
+	a {
+		color:$text-color;
+	}
+	li {
+		margin-top:2px;
+	}
+
+}
+
+
+.kansio-otsikko {
+	border-bottom:1px solid $puu-tausta - 100;
+	min-height:25px;
+	padding-left:3px;
+	color:$text-color;
+	display:none;
+
+}
+
+.kansio-puu-merkki {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.kansio-puu-merkki:before {
+	content:"\203A";
+	padding-right:3px;
+	color:$main-color;
+	cursor:pointer;
+}
+
+.kansio-puu-merkki:hover{
+	@extend .aktiivinen;
+}
+
+.kansio-puu-alimerkki {
+	@extend .kansio-puu-merkki;
+	padding-left:10px;
+}
+
+
+.kansio-sisalto {
+	min-height:100%;
+	background-color:$kansio-sisalto-tausta -10;
+
+	ul {
+		list-style-type: none;
+		padding:15px 5px 5px 5px;
+	}
+}
+
+
+
+
+.kansio-sisalto-merkki:before {
+	content:"\203A";
+	padding-right:3px;
+	color:$main-color;
+	cursor:pointer;
+}
+
+
+.kansio-kontti {
+	display:none;
+	background-color:white;
+
+
+}
+
+.aktiivinen {
+	background: -webkit-linear-gradient($main-color,$main-color + 30); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($main-color,$main-color  - 30); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($main-color,$main-color - 30); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($main-color,$main-color - 30); /* Standard syntax */
+	color:$main-color + 180;
+
+	}
+
+
+	html {
+		height:100%;
+	}
+
+	body {
+		background-color: $puu-tausta + 50;
+		font-family: 'Open Sans', 'sans-serif';
+		height:100%;
+		color:$text-color;
+
+	}
+
+
+	/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
+	::selection {
+		background: $main-color;
+		/* Safari */
+		color: $text-color;
+	}
+
+	::-moz-selection {
+		background: $main-color;
+		/* Firefox */
+		color: $text-color;
+	}
+
+
+
+
+	.kolumni-2-tablet{
+		padding:0 0 0 3px;
+		//border-right:1px solid $puu-tausta - 200;
+	}
+
+	.kolumni-10-tablet {
+		padding:0;
+		height:100%;
+		background-color: $kansio-sisalto-tausta - 10;
+		border-left:1px solid $kansio-sisalto-tausta - 80;
+	}
+
+
+
+
+	.polku-rivi {
+		font-size:105%;
+		width:100%;
+		height:25px;
+		background-color:$polku-rivi;
+		box-shadow: inset 1px 1px 1px $puu-tausta - 50;
+		border-bottom:1px solid $puu-tausta;
+		color:$text-color;
+		padding-left:5px;
+
+	}
+
+
+
+	.polku-kategoria {
+		float:left;
+		padding-right:5px;
+		padding-left:5px;
+		color: $text-color;
+	}
+
+	.polku-kategoria:after {
+		content:"/";
+		color: $main-color;
+
+	}
+
+
+
+	.polku-alikategoria {
+		float:left;
+		padding-right:5px;
+	}
+	.polku-alikategoria:after {
+		content:"/";
+		color: $main-color;
+		padding-left:5px;
+
+	}
+
+
+
+	.polku-osa {
+		float:left;
+		color: $text-color;
+	}
+
+	.polku-osa:after {
+		content:"/";
+		color: $main-color;
+		padding: 0 5px 0 5px;
+
+	}
+
+
+	.alikansio-kategoria {
+		display:none;
+	}
+
+	.alikansio-otsikko {
+		@extend .alikansio-kategoria;
+	}
+
+	.teksti-otsikko {
+		@extend .polku-rivi;
+
+		background: -webkit-linear-gradient($main-color,$main-color - 30); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient($main-color,$main-color  - 30); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient($main-color,$main-color - 30); /* For Firefox 3.6 to 15 */
+		background: linear-gradient($main-color,$main-color - 30); /* Standard syntax */
+
+		padding-left:5px;
+		color:$main-color + 180;
+		border-bottom:none;
+		border-radius:0;
+		border-radius: 2px 2px 0px 0px;
+		box-shadow: 1px 1px 1px 1px $puu-tausta - 80;
+	}
+
+	.teksti-kontti {
+		padding:15px 15px 0 15px;
+	}
+
+	.teksti-sisalto {
+		border-left:1px solid $main-color;
+		border-right:1px solid $main-color;
+		border-bottom:1px solid $main-color;
+		background:white;
+		box-shadow: 3px 3px 3px 3px $puu-tausta - 80;
+		min-height:350px;
+
+	}
+
+	.paa-kontti {
+		background-color:white;
+	}
+
+	.ensi-rivi {
+@extend .aktiivinen;
+@extend .kansio-sisalto;
+color:$main-color + 200;
+}
+
+.kansio-sisalto table td {
+	padding: 2px 5px 2px 2px;
+	//color: $text-color;
+
+	
+}
+
+
+.kansio-sisalto tr {
+	width:100%;
+}
+
+.tiedosto-otsikko-td {
+
+	width:100%;
+}
+
+
+.kansio-puu-paa-linkit {
+	border-bottom:1px solid $puu-tausta + 150;
+	padding-bottom:5px;
+
+}
+
+ .index-kontti {
+display:block;
+float:left;
+background-color:$puu-tausta + 210;
+min-height:97%;
+width:100%;
+
+ .kolumni-4-tablet {
+ 	float:left;
+ 	width:100%;
+	img {
+		border:1px solid $main-color; 
+		float:left;
+		width:150px;
+		height:auto;
+		
+	}
+ }
+
+
+}
+
+.index-tiedot {
+	//border-left: 2px solid $main-color;
+	padding:5px;
+	float:left;
+
+
+	ul {
+		border-left:1px solid $main-color;
+		list-style-type: none;
+		li {
+			//border-bottom: 1px solid $main-color;
+		}
+	}
+}
+
+
+.kansio-puu-merkki-main {
+	@extend .kansio-puu-merkki;
+
+}

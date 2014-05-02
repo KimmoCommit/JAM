@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<script>
+function goBack()
+{
+  window.history.back()
+}
+</script>
+<div class="kolumni-2-tablet">
+  <div class="kansio-puu">
+    <ul class="kansio-puu-ul">
+      <div class="kansio-puu-paa-linkit">
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
+      </div>
+      <a href="{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki-main">Home</div></li></a>
+      <a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Back</div></li></a>
+
+    </ul>
+  </div>
+</div>   
+<div class="kolumni-10-tablet paa-kontti">
+  <div class="polku-rivi">
+    <div class="polku1"><div class="polku-osa">Favourites</div></div>
+  </div>
+
+  <div class="kansio-kontti" style="display:block;">
+    <div class="kansio-sisalto">
+      <table>
+        <tr class="ensi-rivi">
+          <td>Title</td><td>  Words </td><td> Date </td>
+        </tr>
+
+        {% for category in site.categories%}
+        {% if category contains "favourite" %}
+        {% for posts in category %}
+        {% for post in posts %}
+        {% if post.title != null %}
+        <tr>
+          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
+            <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
+            <td> {{ post.content | number_of_words }} </td>
+            <td> {{ post.date | date: "%d-%m-%Y" }} </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+          
+        </table>
+
+      </div>
+
+    </div>
+
