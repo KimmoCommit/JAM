@@ -34,11 +34,11 @@ function goBack()
           <td>Title</td><td>  Words </td><td> Date </td>
         </tr>
 
-        {% for category in site.categories%}
-        {% if category contains "favourite" %}
+        {% for category in site.categories %}
+
         {% for posts in category %}
         {% for post in posts %}
-        {% if post.title != null %}
+        {% if post.title != null and post.favourite != null %}
         <tr>
           <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
             <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
@@ -48,7 +48,7 @@ function goBack()
           {% endif %}
           {% endfor %}
           {% endfor %}
-          {% endif %}
+
           {% endfor %}
           
         </table>

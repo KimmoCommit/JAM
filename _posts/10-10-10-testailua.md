@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testi
-categories: Testikansio
+category: Testikansio
 ---
 
 ##Testipostaus

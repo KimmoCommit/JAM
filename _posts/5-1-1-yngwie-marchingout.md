@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yngwie Malmsteen - Marching Out
-categories: Musiikkia
+category: Musiikkia
 ---
 
 **Levy:** Marching Out |

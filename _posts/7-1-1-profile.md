@@ -1,7 +1,7 @@
 ---
 layout: post
 title: profile
-categories: main
+category: main
 ---
 
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Laulu toisesta maailmansodasta
-categories: Git
+category: Git
 subcategory: ALIHAKEMISTOJUTTU
+
 ---
 >monesta murhe näytelmästä, kertoo maailman historia..

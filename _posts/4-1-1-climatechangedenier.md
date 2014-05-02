@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Climate Change Denier - pigwiththefaceofaboy
-categories: Musiikkia
+category: Musiikkia
 ---
 
 **Kappale:** Climate Change Denier |

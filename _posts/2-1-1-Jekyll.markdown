@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Jekyll muistio
-categories: Jekyll favourite
+category: Jekyll
+favourite: yes
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git subdir
-categories: Git
+category: Git
 subcategory: SubGit
 ---
 DIS IS SUB DIR

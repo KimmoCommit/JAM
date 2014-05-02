@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown muistio
-categories: Markdown
+category: Markdown
 ---
 
 Tulossa..
