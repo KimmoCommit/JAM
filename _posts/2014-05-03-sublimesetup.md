@@ -1,5 +1,5 @@
 ---
-title: Sublime asetukset
+title: Sublimen Packet Managerin asennus ja käyttö
 category: Sublime Text
 layout: post
 ---
