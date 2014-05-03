@@ -303,11 +303,15 @@ body {
   list-style-type: none;
 }
 
-/* line 341, ../sass/style.scss */
-code {
+/* line 342, ../sass/style.scss */
+code, pre {
   background-color: #F9F9F9;
-  border: 1px dashed rgba(60, 190, 250, 0.7);
   color: black;
   line-height: 1.1em;
   padding: 0 5px 0 5px;
+}
+
+/* line 352, ../sass/style.scss */
+pre {
+  max-width: 99%;
 }

@@ -338,13 +338,19 @@ width:100%;
 }
 
 
+
 code {
     background-color: #F9F9F9;
-    border: 1px dashed $main-color;
     color: black;
     line-height: 1.1em;
     padding:0 5px 0 5px;
 
 
 
+}
+
+pre {
+	@extend code;
+	max-width:99%;
+	
 }
