@@ -13,12 +13,12 @@ function goBack()
   <div class="kansio-puu">
     <ul class="kansio-puu-ul">
       <div class="kansio-puu-paa-linkit">
-        <a class="kansio-puu-linkki" href="/{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
-        <a class="kansio-puu-linkki" href="/{{ site.baseurl }}/about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
-        <a class="kansio-puu-linkki" href="/{{ site.baseurl }}/favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
-                 <a class="kansio-puu-linkki" href="https://github.com/{{ site.data.owner.name }}/JAM/tree/gh-pages/_posts" target="_blank"> <li><div class="kansio-puu-merkki-main"> Post Management</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
+        <a class="kansio-puu-linkki" href="{{ site.baseurl }}favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
+        <a class="kansio-puu-linkki" href="https://github.com/{{ site.data.owner.name }}{{ site.baseurl }}tree/gh-pages/_posts" target="_blank"> <li><div class="kansio-puu-merkki-main"> Post Management</div></li></a>
       </div>
-      <a href="/{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki-main">Home</div></li></a>
+      <a href="{{ site.baseurl }}index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki-main">Home</div></li></a>
       <a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Back</div></li></a>
 
     </ul>
@@ -42,7 +42,7 @@ function goBack()
         {% for post in posts %}
         {% if post.title != null and post.favourite != null %}
         <tr>
-          <td class="tiedosto-otsikko-td"> <a href="/{{ site.baseurl }}/{{ post.url }}">
+          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
             <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
             <td> {{ post.content | number_of_words }} </td>
             <td> {{ post.date | date: "%d-%m-%Y" }} </td>
@@ -58,4 +58,3 @@ function goBack()
       </div>
 
     </div>
-

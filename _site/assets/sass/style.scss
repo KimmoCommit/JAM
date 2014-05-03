@@ -10,7 +10,7 @@
 //$main-color: rgba(100,220,0,0.7);
 
 $main-color: rgba(60,190,250,0.7);
-$text-color: grey;
+$text-color: rgba(100,100,100,0.9);
 $puu-tausta: rgba(0,0,0,0.2);
 $kansio-sisalto-tausta: white;
 $polku-rivi: rgba(230,230,230,1);
@@ -334,5 +334,17 @@ width:100%;
 
 .kansio-puu-merkki-main {
 	@extend .kansio-puu-merkki;
+
+}
+
+
+code {
+    background-color: #F9F9F9;
+    border: 1px dashed $main-color;
+    color: black;
+    line-height: 1.1em;
+    padding:0 5px 0 5px;
+
+
 
 }
