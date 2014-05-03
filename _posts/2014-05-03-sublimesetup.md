@@ -19,7 +19,7 @@ Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asen
 > Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain "install"
 
 
-**Lähteet**
+####Lähteet
 
 1.[Hyvä englanninkielinen Sublime Package Manager asennus- ja käyttöohje](http://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/)
 
