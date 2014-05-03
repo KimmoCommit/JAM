@@ -12,12 +12,7 @@ function goBack()
 <div class="kolumni-2-tablet">
   <div class="kansio-puu">
     <ul class="kansio-puu-ul">
-      <div class="kansio-puu-paa-linkit">
-        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/index.html"> <li><div class="kansio-puu-merkki-main"> {{ site.data.owner.name }}</div></li></a>
-        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/about.html"> <li><div class="kansio-puu-merkki-main"> About</div></li></a>
-        <a class="kansio-puu-linkki" href="{{ site.baseurl }}/favourites.html"> <li><div class="kansio-puu-merkki-main"> Favourites</div></li></a>
-        <a class="kansio-puu-linkki" href="https://github.com/{{ site.data.owner.name }}{{ site.baseurl }}/tree/gh-pages/_posts" target="_blank"> <li><div class="kansio-puu-merkki-main"> Post Management</div></li></a>
-      </div>
+      {% include puu-paa-linkit.html %}
       <a href="{{ site.baseurl }}/index.html" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki-main">Home</div></li></a>
       <a onclick="goBack()" class="kansio-puu-linkki"><li> <div class="kansio-puu-merkki">Back</div></li></a>
 
