@@ -55,7 +55,7 @@ layout: default
         {% for post in posts %}
         {% if post.title != null and post.subcategory  == null %}
         <tr>
-          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
+          <td class="tiedosto-otsikko-td"> <a href="/{{ site.baseurl }}/{{ post.url }}">
             <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
             <td> {{ post.content | number_of_words }} </td>
             <td> {{ post.date | date: "%Y-%m-%d" }} </td>
@@ -88,7 +88,7 @@ layout: default
 
         {% if post.title != null and post.subcategory  != null %}
         <tr>
-          <td class="tiedosto-otsikko-td"><a href="{{ site.baseurl }}{{ post.url }}"> <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
+          <td class="tiedosto-otsikko-td"><a href="/{{ site.baseurl }}/{{ post.url }}"> <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
           <td> {{ post.content | number_of_words }} </td>
           <td> {{ post.date | date: "%d-%m-%Y" }} </td>
         </tr>
