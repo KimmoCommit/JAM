@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Laulu toisesta maailmansodasta |  My Personal File Management </title>
+  <title> Sublimen Packet Managerin asennus ja käyttö |  My Personal File Management </title>
   <meta name="description" content="">
 
 <!--[if lt IE 9]>
@@ -24,7 +24,7 @@ function goBack()
   window.history.back()
   }
 </script>
-<!--<p class="meta">12 Dec 2012</p>-->
+<!--<p class="meta">03 May 2014</p>-->
      <div class="kolumni-2-tablet">
           <div class="kansio-puu">
             <ul class="kansio-puu-ul">
@@ -44,18 +44,32 @@ function goBack()
      
          <!-- <div class="polku-rivi">
         
-              <div class="polku-osa">Git</div>
+              <div class="polku-osa">Sublime Text</div>
 
-              
-              <div class="polku-osa">ALIHAKEMISTOJUTTU</div>
               
           </div>-->
           <div class="teksti-kontti">
-          <div class="teksti-otsikko"> :: Laulu toisesta maailmansodasta ::  </div>
+          <div class="teksti-otsikko"> :: Sublimen Packet Managerin asennus ja käyttö ::  </div>
           <div class="kolumni-12-tablet teksti-sisalto">
+<h4 id="1_asenna_pakettienhallinta_sublimeen">1. Asenna pakettienhallinta Sublimeen</h4>
+
+<p>Mene konsoliin <strong>(View-&gt;Show Console)</strong>, ja aja alla oleva asennuskoodi.</p>
+
+<p><code>import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')</code></p>
+
+<h4 id="2_kynnist_sublime_text_uudestaan_ja_avaa_package_manager">2. Käynnistä Sublime Text uudestaan ja avaa Package Manager</h4>
+
+<p>Avaa komentopaletti näppäinyhdistelmällä <strong>Ctrl-Shift-P</strong> (Windows ja Linux) ja kirjoita <strong>Package Control</strong>. Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asentaa uusia paketteja valitsemalla <strong>Install Package</strong>, jonka jälkeen voit hakea haluamiasi paketteja ladattavaksi, kuten syntaksien väritunnisteita jne.</p>
+
 <blockquote>
-<p>monesta murhe näytelmästä, kertoo maailman historia..</p>
+<p>Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain “install”</p>
 </blockquote>
+
+<h4 id="lhteet">Lähteet</h4>
+
+<p>1.<a href="http://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/">Hyvä englanninkielinen Sublime Package Manager asennus- ja käyttöohje</a></p>
+
+<p>2.<a href="https://sublime.wbond.net/installation#st2">Sublime Text 2 asennuskoodi</a></p>
 </div>
 </div>
 </div>
