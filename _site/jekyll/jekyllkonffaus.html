@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Climate Change Denier - pigwiththefaceofaboy |  My Personal File Management </title>
+	<title> Jekyll käyttöönotto-opas |  My Personal File Management </title>
 	<meta name="description" content="">
 
 <!--[if lt IE 9]>
@@ -23,7 +23,7 @@ function goBack()
   window.history.back()
 }
 </script>
-<!--<p class="meta">01 Jan 2004</p>-->
+<!--<p class="meta">04 May 2014</p>-->
 <div class="kolumni-2-tablet">
   <div class="kansio-puu">
     <ul class="kansio-puu-ul">
@@ -48,15 +48,32 @@ function goBack()
  
          <!-- <div class="polku-rivi">
         
-              <div class="polku-osa">Musiikkia</div>
+              <div class="polku-osa">Jekyll</div>
 
+              
+              <div class="polku-osa">Jekyll konffaus</div>
               
             </div>-->
             <div class="teksti-kontti">
-              <div class="teksti-otsikko"> :: Climate Change Denier - pigwiththefaceofaboy ::  </div>
+              <div class="teksti-otsikko"> :: Jekyll käyttöönotto-opas ::  </div>
               <div class="kolumni-12-tablet teksti-sisalto">
-                <p><strong>Kappale:</strong> Climate Change Denier | <strong>Esittäjä:</strong> pigwiththefaceofaboy | <a href="http://pigfaceboy.co.uk/climate-change-denier-song/">Lähde</a></p>
-<iframe allowfullscreen='allowfullscreen' frameborder='0' height='480' src='//www.youtube.com/embed/9h74DTdTlCk?rel=0' width='80%' />
+                <p><strong>Jekyll devauskomento</strong>:</p>
+
+<pre><code>jekyll serve build --watch --baseurl &quot;&quot;</code></pre>
+
+<p><br /></p>
+
+<p><strong>baseurl:</strong> nimensä mukaisesti config.yml-tiedostossa baseurl säätää peruspolun. GitHub-sivuja (gh-pages) käyttäessä tulee määrittää peruspoluksi repon nimi.</p>
+
+<pre><code>baseurl: /REPON_NIMI</code></pre>
+
+<p><br /></p>
+
+<p><strong>permalink:</strong> permalinkillä voidaan määrittää polkurakenne, jota sivustosi seuraa. Yksi tyypillinen käyttötapa on ottaa permalink pois käytöstä asettamalle sille arvo “none”. <a href="http://jekyllrb.com/docs/permalinks/">Lisää..</a></p>
+
+<pre><code>permalink: none</code></pre>
+
+<p><br /></p>
               </div>
             </div>
           </div>
