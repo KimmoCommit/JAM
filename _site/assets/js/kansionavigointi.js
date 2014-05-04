@@ -1,10 +1,19 @@
 $(function(){
-	$(".kansio-puu-linkki").click(function(e){
+	$(".ylikansio").click(function(e){
 		e.preventDefault();
 		var thisDataCategory = $(this).attr("data-category");
-		$('.kansio-puu-linkki[data-category='+thisDataCategory+']').show();
+
+		if($(this).hasClass("auki") === false) {
+			$('.kansio-puu-linkki[data-category='+thisDataCategory+']').show();
+			$(this).addClass("auki");
+		}
+		else if ($(this).hasClass("auki") === true ) {
+			$('.alikansio-puu-linkki[data-category='+thisDataCategory+']').hide();
+			$(this).removeClass("auki");
+		}
 	});
 });
+
 
 $(function(){
 
@@ -14,9 +23,10 @@ $(function(){
 		var thisDataCategory = $(this).attr("data-category");
 		$(".kansio-kontti").hide();
 		$(".kansio-puu-merkki").removeClass("aktiivinen");
+		$(".kansio-puu-merkki").removeClass("auki-merkki");
 		$(this).addClass("aktiivinen");
 		$(id).show();
-		$(".alikansio-puu-linkki").hide();
+		//$(".alikansio-puu-linkki").hide();
 		var alikategoria = $("div"+id).children(".alikansio-kategoria").text();
 		if($(this).hasClass("home") === true) {
 			$(".index-kontti").show();

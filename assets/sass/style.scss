@@ -63,6 +63,7 @@ header {
 
 .kansio-puu-merkki {
 	width: 100%;
+	height:auto;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -356,6 +357,26 @@ pre {
 }
 
 
-.kansio-puu-ul {
+.alikansio-puu-linkki {
+	display:none;
+	width:100%;
+	height:auto;
+	//padding-bottom:-15px;
 
 }
+
+.ylikansio {
+	width:100%;
+}
+
+.auki-merkki {
+	@extend .aktiivinen;
+}
+
+
+.auki-merkki:before{
+	content:"\203A";
+	color:$main-color + 180;
+	transform:rotate(90deg);
+}
+
