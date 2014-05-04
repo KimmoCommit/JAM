@@ -300,11 +300,10 @@ body {
 }
 /* line 326, ../sass/style.scss */
 .index-tiedot ul {
-  border-left: 1px solid rgba(60, 190, 250, 0.7);
   list-style-type: none;
 }
 
-/* line 343, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 code, pre {
   background-color: #F9F9F9;
   color: black;
@@ -312,24 +311,24 @@ code, pre {
   padding: 0 5px 0 5px;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 pre {
   max-width: 99%;
 }
 
-/* line 360, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .alikansio-puu-linkki {
   display: none;
   width: 100%;
   height: auto;
 }
 
-/* line 368, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .ylikansio {
   width: 100%;
 }
 
-/* line 377, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .auki-merkki:before {
   content: "\203A";
   color: rgba(240, 255, 255, 0.7);
