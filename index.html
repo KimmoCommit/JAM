@@ -13,7 +13,6 @@ layout: default
   <div class="polku-rivi">
     <div class="polku"><div class="polku-osa"></div></div>
   </div>
-
   <div class="kansio-kontti index-kontti">
     <div class="kolumni-12-tablet" style="float:left;">
       <div class="index-tiedot">
@@ -26,7 +25,6 @@ layout: default
      </div>
    </div>
  </div>
-
  {% for category in site.categories %}
  {% unless category contains "main" or category contains "favourite" %}
  <div class="kansio-kontti">
@@ -53,7 +51,6 @@ layout: default
     </table>
   </div>
 </div>
-
 {% for posts in category %}
 {% for post in posts %}
 {% if post.subcategory != null %}
@@ -69,7 +66,6 @@ layout: default
     <tr class="ensi-rivi">
       <td>Title</td><td>  Words </td><td> Date </td>
     </tr>
-
     {% if post.title != null and post.subcategory  != null %}
     <tr>
       <td class="tiedosto-otsikko-td"><a href="{{ site.baseurl }}{{ post.url }}"> <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>

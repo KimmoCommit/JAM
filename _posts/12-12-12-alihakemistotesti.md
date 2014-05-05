@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Laulu toisesta maailmansodasta
+title: Alihakemistotesti
 category: Git
-subcategory: ALIHAKEMISTOJUTTU
+subcategory: Alikategoriatesti
 
 ---
->monesta murhe näytelmästä, kertoo maailman historia..
+Kokeillaan alikategorian toimivuutta! :).

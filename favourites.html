@@ -2,7 +2,6 @@
 title: Favourites
 layout: default
 ---
-
 <script>
 function goBack()
 {
@@ -22,16 +21,13 @@ function goBack()
   <div class="polku-rivi">
     <div class="polku1"><div class="polku-osa">Favourites</div></div>
   </div>
-
   <div class="kansio-kontti" style="display:block;">
     <div class="kansio-sisalto">
       <table>
         <tr class="ensi-rivi">
           <td>Title</td><td>  Words </td><td> Date </td>
         </tr>
-
         {% for category in site.categories %}
-
         {% for posts in category %}
         {% for post in posts %}
         {% if post.title != null and post.favourite != null %}
@@ -44,11 +40,7 @@ function goBack()
           {% endif %}
           {% endfor %}
           {% endfor %}
-
-          {% endfor %}
-          
+          {% endfor %}  
         </table>
-
       </div>
-
     </div>
