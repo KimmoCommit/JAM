@@ -61,30 +61,57 @@ header {
 
 }
 
-.kansio-puu-merkki {
+.kansio-puu-ylimerkki {
 	width: 100%;
 	height:auto;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+
+	img{
+		margin-top:3px;
+		padding-right:5px;
+		height:100%;
+		width:auto;
+	}
 }
 
-.kansio-puu-merkki:before {
+/*
+.kansio-puu-ylimerkki:before {
 	content:"\203A";
 	padding-right:3px;
 	color:$main-color;
 	cursor:pointer;
 }
+*/
+
+.kansio-puu-ylimerkki:hover{
+	@extend .aktiivinen;
+
+}
+
 
 .kansio-puu-merkki:hover{
 	@extend .aktiivinen;
 }
 
 .kansio-puu-alimerkki {
-	@extend .kansio-puu-merkki;
+	//@extend .kansio-puu-merkki;
+
 	padding-left:10px;
+
+	img {
+		margin-top:3px;
+		padding-right:5px;
+		vertical-align:top;
+		height:100%;
+		width:auto;
+	}
 }
 
+.kansio-puu-alimerkki:before {
+	content:none;
+}
 
 .kansio-sisalto {
 	min-height:100%;
@@ -100,7 +127,7 @@ header {
 
 
 .kansio-sisalto-merkki:before {
-	content:"\203A";
+	//content:"\203A";
 	padding-right:3px;
 	color:$main-color;
 	cursor:pointer;
@@ -286,6 +313,12 @@ color:$main-color + 200;
 .tiedosto-otsikko-td {
 
 	width:100%;
+	img {
+		height:100%;
+		width:auto;
+		padding-top:3px;
+		padding-right:5px;
+	}
 }
 
 
@@ -374,10 +407,11 @@ pre {
 	@extend .aktiivinen;
 }
 
-
+/*
 .auki-merkki:before{
 	content:"\203A";
 	color:$main-color + 180;
 	transform:rotate(90deg);
 }
+*/
 

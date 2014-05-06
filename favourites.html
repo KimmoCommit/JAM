@@ -32,7 +32,7 @@ function goBack()
         {% for post in posts %}
         {% if post.title != null and post.favourite != null %}
         <tr>
-          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}">
+          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left;" src="assets/img/document9.svg" />
             <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
             <td> {{ post.content | number_of_words }} </td>
             <td> {{ post.date | date: "%d-%m-%Y" }} </td>
