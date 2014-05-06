@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" enable-background="new 0 0 16 16"><path d="M42 45c0 1.659-1.341 3-3 3h-30c-1.656 0-3-1.341-3-3 0-6 5.799-11.598 11.727-13.812-3.423-2.115-5.727-5.871-5.727-10.188v-3c0-6.627 5.373-12 12-12s12 5.373 12 12v3c0 4.317-2.304 8.073-5.724 10.188 5.925 2.214 11.724 7.812 11.724 13.812z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   enable-background="new 0 0 16 16"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="user13.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="40"
+     inkscape:window-y="37"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M42 45c0 1.659-1.341 3-3 3h-30c-1.656 0-3-1.341-3-3 0-6 5.799-11.598 11.727-13.812-3.423-2.115-5.727-5.871-5.727-10.188v-3c0-6.627 5.373-12 12-12s12 5.373 12 12v3c0 4.317-2.304 8.073-5.724 10.188 5.925 2.214 11.724 7.812 11.724 13.812z"
+     id="path4"
+     style="fill:#b3b3b3" />
+</svg>

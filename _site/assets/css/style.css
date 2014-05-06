@@ -122,7 +122,7 @@ a {
 }
 
 /* line 148, ../sass/style.scss */
-.aktiivinen, .kansio-puu-ylimerkki:hover, .kansio-puu-merkki:hover, .kansio-puu-merkki-main:hover, .ensi-rivi, .auki-merkki {
+.aktiivinen, .kansio-puu-ylimerkki:hover, .kansio-puu-merkki:hover, .kansio-puu-merkki-main:hover, .ensi-rivi {
   background: -webkit-linear-gradient(rgba(60, 190, 250, 0.7), rgba(90, 220, 255, 0.7));
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(60, 190, 250, 0.7), rgba(30, 160, 220, 0.7));
@@ -302,8 +302,14 @@ body {
   border-bottom: 1px solid rgba(150, 150, 150, 0.2);
   padding-bottom: 5px;
 }
+/* line 333, ../sass/style.scss */
+.kansio-puu-paa-linkit img {
+  height: 20px;
+  width: auto;
+  float: left;
+}
 
-/* line 335, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .index-kontti {
   display: block;
   float: left;
@@ -311,12 +317,12 @@ body {
   min-height: 97%;
   width: 100%;
 }
-/* line 342, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet {
   float: left;
   width: 100%;
 }
-/* line 345, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet img {
   border: 1px solid rgba(60, 190, 250, 0.7);
   float: left;
@@ -324,17 +330,17 @@ body {
   height: auto;
 }
 
-/* line 357, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .index-tiedot {
   padding: 5px;
   float: left;
 }
-/* line 363, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .index-tiedot ul {
   list-style-type: none;
 }
 
-/* line 374, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .kansio-puu-merkki-main {
   width: 100%;
   height: auto;
@@ -343,7 +349,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 385, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 code, pre {
   background-color: #F9F9F9;
   color: black;
@@ -351,27 +357,19 @@ code, pre {
   padding: 0 5px 0 5px;
 }
 
-/* line 395, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 pre {
   max-width: 99%;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .alikansio-puu-linkki {
   display: none;
   width: 100%;
   height: auto;
 }
 
-/* line 410, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .ylikansio {
   width: 100%;
 }
-
-/*
-.auki-merkki:before{
-	content:"\203A";
-	color:$main-color + 180;
-	transform:rotate(90deg);
-}
-*/

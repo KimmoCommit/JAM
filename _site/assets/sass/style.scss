@@ -330,6 +330,13 @@ color:$main-color + 200;
 	border-bottom:1px solid $puu-tausta + 150;
 	padding-bottom:5px;
 
+	img {
+		
+		height:20px;
+		width:auto;
+		float:left;
+	
+	}
 }
 
  .index-kontti {
@@ -355,18 +362,10 @@ width:100%;
 }
 
 .index-tiedot {
-	//border-left: 2px solid $main-color;
 	padding:5px;
 	float:left;
-
-
 	ul {
-		//border-left:1px solid $main-color;
 		list-style-type: none;
-		li {
-			
-			//border-bottom: 1px solid $main-color;
-		}
 	}
 }
 
@@ -388,8 +387,6 @@ code {
     line-height: 1.1em;
     padding:0 5px 0 5px;
 
-
-
 }
 
 pre {
@@ -398,28 +395,13 @@ pre {
 	
 }
 
-
 .alikansio-puu-linkki {
 	display:none;
 	width:100%;
 	height:auto;
-	//padding-bottom:-15px;
-
 }
 
 .ylikansio {
 	width:100%;
 }
-
-.auki-merkki {
-	@extend .aktiivinen;
-}
-
-/*
-.auki-merkki:before{
-	content:"\203A";
-	color:$main-color + 180;
-	transform:rotate(90deg);
-}
-*/
 

@@ -12,14 +12,13 @@ function goBack()
 <div class="kolumni-2-tablet">
   <div class="kansio-puu">
     <ul class="kansio-puu-ul">
-         {% include puu-paa-linkit.html %}
-      <a href="{{ site.baseurl }}/index.html"><li> <div class="kansio-puu-merkki">Home</div></li></a>
-      <a onclick="goBack()"><li> <div class="kansio-puu-merkki">Back</div></li></a>
-    </ul>
-  </div>
+     {% include puu-paa-linkit.html %}
+     {% include home-back-linkit.html %}
+   </ul>
+ </div>
 </div>   
 <div class="kolumni-10-tablet">
- 
+
          <!-- <div class="polku-rivi">
         
               <div class="polku-osa">{{ page.category }}</div>
