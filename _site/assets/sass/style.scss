@@ -97,7 +97,11 @@ header {
 
 .kansio-puu-alimerkki {
 	//@extend .kansio-puu-merkki;
-
+	width: 100%;
+	height:auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	padding-left:10px;
 
 	img {
@@ -369,7 +373,11 @@ width:100%;
 
 .kansio-puu-merkki-main {
 	@extend .kansio-puu-merkki;
-
+	width: 100%;
+	height:auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 
